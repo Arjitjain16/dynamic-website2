@@ -325,7 +325,7 @@ nav{
 }
 
 .page5{
-    height: 100vh;
+    height: 160vh;
     width: 100%;
 }
 .page5-cont{
@@ -353,11 +353,15 @@ nav{
     margin-right: 34vmax;
 }
 .container5{
+    height: 55vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8vmax;
+    /* margin-top: 8vmax; */
+    transition: 0.5s ease-in-out;
+    position: relative;
+
 }
 .circle5{
     height: 11vmax;
@@ -371,8 +375,17 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 5px;
-    transform: rotate(0deg)
+    transform: rotate(0deg);
+    position: absolute;
 }
+
+.container5:hover{
+    scale: 1.2;
+    transform: rotate(-15deg);
+    text-align: center;
+    
+}
+
 .circle5 h4{
     font-size: 1.6vmax;
 }
@@ -380,4 +393,31 @@ nav{
 .page6{
     min-height: 100vh;
     width: 100%;
+    background-color: #9AC1CB;
+}
+
+.page6 h1{
+    font-size: 34vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -27px;
+    margin-left: 3vmax;
+}
+.container6{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 2vmax;
+}
+
+.cont61,.cont62, .cont63{
+    height: 20vmax;
+    width: 10vmax;
+    display: flex;
+    flex-direction: column;
+    background-color: cyan;
 }

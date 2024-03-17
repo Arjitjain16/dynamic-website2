@@ -208,3 +208,18 @@ circle.addEventListener('mouseenter' , ()=>{
     })
 })
 
+
+var tl5 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page6",
+        scroller: ".main",
+        start: "top 0%",
+        end: "top -70%",
+        scrub: true,
+        pin: true
+    }
+})
+tl5.to(".page6 h1", {
+    transform: "translateX(-64%)",
+    duration : 5
+},)
